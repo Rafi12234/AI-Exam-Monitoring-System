@@ -1,0 +1,193 @@
+.student-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-left: 5px solid #FF6B6B;
+}
+
+.student-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.student-info h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.offense-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  background-color: #FFB347;
+}
+
+.offense-badge.critical {
+  background-color: #FF6B6B;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-details {
+  background-color: #667eea;
+  color: white;
+}
+
+.btn-details:hover {
+  background-color: #5568d3;
+  transform: scale(1.05);
+}
+
+.btn-reset {
+  background-color: #48BB78;
+  color: white;
+}
+
+.btn-reset:hover {
+  background-color: #38a169;
+  transform: scale(1.05);
+}
+
+.btn-clear {
+  background-color: #F56565;
+  color: white;
+}
+
+.btn-clear:hover {
+  background-color: #e53e3e;
+  transform: scale(1.05);
+}
+
+.card-details {
+  padding: 16px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card-details h4 {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.offenses-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.offense-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 12px;
+}
+
+.offense-item:last-child {
+  border-bottom: none;
+}
+
+.behavior-type {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  min-width: 60px;
+  text-align: center;
+}
+
+.offense-time {
+  color: #666;
+  font-size: 11px;
+  margin-left: auto;
+}
+
+.loading,
+.no-offenses {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.more-offenses {
+  text-align: center;
+  color: #667eea;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+  font-size: 11px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-actions {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .btn {
+    flex: 1;
+  }
+}
