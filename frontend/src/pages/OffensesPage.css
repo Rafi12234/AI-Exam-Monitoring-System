@@ -1,0 +1,16 @@
+.offenses-page {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.offenses-page h2 {
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.offenses-page p {
+  color: #666;
+}
