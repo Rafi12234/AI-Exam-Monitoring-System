@@ -1,0 +1,16 @@
+.settings-page {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.settings-page h2 {
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.settings-page p {
+  color: #666;
+}
