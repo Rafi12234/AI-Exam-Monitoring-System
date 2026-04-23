@@ -1,0 +1,30 @@
+# Frontend Node
+node_modules/
+npm-debug.log
+npm-error.log
+yarn-error.log
+
+# Build
+build/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+coverage/
+
+# Misc
+.eslintcache
